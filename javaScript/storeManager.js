@@ -4,3 +4,6 @@ function saveUser(newUser) {
     console.log(val);
     localStorage.setItem("user", val);
 }
+function readUser(){
+    
+}
