@@ -1,4 +1,10 @@
+let registerUser ={
+    users: []
+};
+let count =0;
 function User(email, password, fName, lName, age, address, phone, payment, color) {
+
+    this.id = count++;
     this.email = email;
     this.password = password;
     this.fName = fName;
