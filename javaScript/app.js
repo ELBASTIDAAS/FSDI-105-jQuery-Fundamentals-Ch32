@@ -1,6 +1,5 @@
-
+let count = 0;
 function User(email, password, fName, lName, age, address, phone, payment, color) {
-
     this.email = email;
     this.password = password;
     this.fName = fName;
@@ -48,10 +47,8 @@ function register() {
 
     if (isValid(user) == true) {
         saveUser(user);
-        alert("You are registered");
+        alert("User registered");
     } else {
         alert("Please fill out all fields");
     }
-
-    saveUser(user);
 }
