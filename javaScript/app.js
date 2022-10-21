@@ -1,10 +1,6 @@
-let registerUser ={
-    users: []
-};
-let count =0;
+
 function User(email, password, fName, lName, age, address, phone, payment, color) {
 
-    this.id = count++;
     this.email = email;
     this.password = password;
     this.fName = fName;
@@ -50,10 +46,10 @@ function register() {
         inputColor.val()
     );
 
-    if (isValid(user) == true){
+    if (isValid(user) == true) {
         saveUser(user);
         alert("You are registered");
-    }else{
+    } else {
         alert("Please fill out all fields");
     }
 
