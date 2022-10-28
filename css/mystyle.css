@@ -25,3 +25,8 @@ li a:hover:not(.active) {
 .active {
     background-color: white;
 }
+
+.contedor{
+    display: flex;
+    flex-direction: row;
+}
